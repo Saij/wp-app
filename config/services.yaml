@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+  _instanceof:
+    WPApp\Components\AbstractComponent:
+      public: true
+      shared: false
+
+  WPApp\:
+    resource: '../src/'
+    exclude:
+      - '../src/Application.php'
+      - '../src/Image.php'

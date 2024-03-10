@@ -1,0 +1,52 @@
+{
+  "name": "saij/wp-app",
+  "type": "package",
+  "description": "Wordpress application framework",
+  "homepage": "https://github.com/saij/wp-app",
+  "authors": [
+    {
+      "name": "Christoph Friedrich",
+      "email": "mail+wp-app@ch-friedrich.net"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/saij/wp-app/issues"
+  },
+  "keywords": [
+    "wordpress",
+    "wp",
+    "application",
+    "framework"
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "sort-packages": true,
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "WPApp\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
+  },
+  "require": {
+    "php": ">=8.2",
+    "vonaffenfels/vaf-wp-framework": "^1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "^3.6"
+  }
+}

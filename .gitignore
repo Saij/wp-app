@@ -1,0 +1,15 @@
+# IDEs
+.idea
+.vscode
+
+# Composer
+vendor
+auth.json
+
+# NPM
+node_modules
+npm-debug.log
+
+# Misc
+.DS_Store
+.phpdoc
